@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quez Time - Выберите Quez</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer ></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="/index.html">
+            <img class="header__logo" src="./img/logo.svg" alt="Доготип">
+            </a>
+            <h1 class="header__title">quez time</h1>
+        </div>
+    </header>
+    <main class="main">
+        <h2 class="main__title">Выберите Quiz</h2>
+        <div class="main__box  selection">
+            <ul class="selection__list">
+                <li class="selection__item">
+                    <button class="selection__theme">Финансовая грамотность</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Фронтенд разработка</button>
+                    <p class="selection__result">
+                        <span class="selection__result-ratio">7/10</span>
+                        <span class="selection__result-text">Последний результат</span>
+                    </p>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Бэкенд разработка</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Личные инвестиции</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Нутрициология</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Свободная тема</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Свободная тема</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Свободная тема</button>
+                </li>
+                <li class="selection__item">
+                    <button class="selection__theme">Свободная тема</button>
+                </li>
+            </ul>
+        </div>
+        <!--Вторая страница-->
+        
+        <!-- <div class="main__box main__box_question">
+            <form  class="main__form-question" data-count="1/10">
+                <fieldset>
+                    <legend class="main__subtitle">Какие типы input корректны? </legend>
+                    <label class="answer" >
+                        <input class="answer__checkbox" type="checkbox" name="answer" > text
+                    </label>
+                    <label class="answer">
+                        <input class="answer__checkbox" type="checkbox" name="answer"> color
+                    </label>
+                    <label class="answer">
+                        <input class="answer__checkbox" type="checkbox" name="answer"> week
+                    </label>
+                    <label class="answer">
+                        <input class="answer__checkbox" type="checkbox" name="answer"> day
+                    </label>
+                </fieldset>
+                <button class="main__btn question__next"> Подтвердить</button>
+            </form>
+        </div> -->
+               <!--Третья страница-->
+        <!--<div class="main__box main__box_question">
+            <form class="main__form-question" data-count="1/10">
+                <fieldset>
+                    <legend class="main__subtitle">Какая столица является родиной демократии? </legend>
+                    <label class="answer">
+                        <input class="answer__radio" type="radio" name="answer"> Рим
+                    </label>
+                    <label class="answer">
+                        <input class="answer__radio" type="radio" name="answer"> Амстердам
+                    </label>
+                    <label class="answer">
+                        <input class="answer__radio" type="radio" name="answer"> Афины
+                    </label>
+                    <label class="answer">
+                        <input class="answer__radio" type="radio" name="answer"> Вашингтон
+                    </label>
+                </fieldset>
+                <button class="main__btn question__next"> Подтвердить</button>
+            </form>
+        </div> -->
+        <!--Четвертая страница-->
+        <!-- <div class="main__box main__box_result result">
+            <h2 class="main__subtitle main__subtitle_result">Ваш результат</h2>
+            <div class="result__box">
+                <p class="result__ratio" >10/10</p>
+                <p class="result__text">Отличный результат!</p>
+            </div>
+            <button class="main__btn result__return"> К списку квизов</button>
+        </div> -->
+        
+
+    </main>
+    
+</body>
+</html>
+
+<!-- c JS    {
+                    type: 'checkbox',
+                    question: 'Вопрос',
+                    answers: ['правильный1', 'правильный2', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 2,
+                },
+                {
+                    type: 'checkbox',
+                    question: 'Вопрос',
+                    answers: ['правильный1', 'правильный2', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 3,
+                },
+                {
+                    type: 'radio',
+                    question: 'Вопрос',
+                    answers: ['правильный1', 'неправильный', 'неправильный', 'неправильный', 'неправильный'],
+                },
+              {
+                    type: 'radio',
+                    question: 'Вопрос',
+                    answers: ['правильный1', 'неправильный', 'неправильный', 'неправильный', 'неправильный'],
+                },
+            
+            const dataBase = [
+        {
+            id: '01',
+            theme: 'Тема 01 тестовая',
+            result: [
+                [40, 'Есть задатки, нужно развиваться'],
+                [80, 'Очень хорошо, но тесть пробелы'],
+                [100, 'Отличный результат']
+            ],
+            list: [
+                {
+                    type: 'checkbox',
+                    question: 'Вопрос1',
+                    answers: ['правильный1', 'правильный2', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 2,
+                },
+                {
+                    type: 'radio',
+                    question: 'Вопрос2',
+                    answers: ['правильный1', 'неправильный', 'неправильный', 'неправильный', 'неправильный'],
+                },
+                {
+                    type: 'checkbox',
+                    question: 'Вопрос3',
+                    answers: ['правильный1', 'правильный2', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 2,
+                },
+                {
+                    type: 'checkbox',
+                    question: 'Вопрос4',
+                    answers: ['правильный1', 'правильный2', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 2,
+                },
+                {
+                    type: 'checkbox',
+                    question: 'Вопрос5',
+                    answers: ['правильный1', 'неправильный', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 1,
+                },
+                {
+                    type: 'radio',
+                    question: 'Вопрос6',
+                    answers: ['правильный1', 'неправильный', 'неправильный', 'неправильный', 'неправильный'],
+                },
+                {
+                    type: 'checkbox',
+                    question: 'Вопрос7',
+                    answers: ['правильный1', 'правильный2', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 2,
+                },
+                {
+                    type: 'checkbox',
+                    question: 'Вопрос8',
+                    answers: ['правильный1', 'правильный2', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 3,
+                }
+            ]
+        },
+        {
+            id: '02',
+            theme: 'Тема 02 тоже тестовая',
+            result: [
+                [30, 'Есть задатки, нужно развиваться'],
+                [60, 'Очень хорошо, но тесть пробелы'],
+                [100, 'Отличный результат']
+            ],
+            list: [
+                {
+                    type: 'radio',
+                    question: 'Вопрос1',
+                    answers: ['правильный1', 'неправильный', 'неправильный', 'неправильный', 'неправильный'],
+                },
+              
+                {
+                    type: 'checkbox',
+                    question: 'Вопрос2',
+                    answers: ['правильный1', 'правильный2', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 2,
+                },
+                {
+                    type: 'checkbox',
+                    question: 'Вопрос3',
+                    answers: ['правильный1', 'неправильный', 'неправильный', 'неправильный', 'неправильный'],
+                    correct: 1,
+                }
+            
+            
+            ]
+        }
+            -->
